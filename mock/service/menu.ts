@@ -31,6 +31,12 @@ export default [
         },
         {
           id: '2',
+          auth: '010101',
+          name: '删除',
+          type: 2
+        },
+        {
+          id: '2',
           auth: '02',
           name: '关于',
           type: 2

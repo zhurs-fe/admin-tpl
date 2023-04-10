@@ -1,5 +1,5 @@
 import { resolve } from 'path'
-import type { UserConfig, ConfigEnv } from 'vite'
+import type { ConfigEnv, UserConfig } from 'vite'
 import { loadEnv } from 'vite'
 import dayjs from 'dayjs'
 import pkg from './package.json'
@@ -49,7 +49,6 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
     server: {
       // Listening on all local IPs
       host: true,
-      open: true,
       port: VITE_PORT,
       // Load proxy configuration from .env
       proxy: createProxy(VITE_PROXY)

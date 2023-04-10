@@ -8,7 +8,7 @@ const handleOk = (e: MouseEvent) => {
 </script>
 
 <template>
-  <div>
+  <div v-auth="'010101'">
     <ButtonWithModal modal-type="pop" modal-title="确认" type="primary" @ok="handleOk">
       删除
     </ButtonWithModal>
